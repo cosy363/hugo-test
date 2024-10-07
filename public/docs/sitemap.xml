@@ -7,20 +7,159 @@
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
+    
     <url>
-        <loc>http://localhost:1314/docs/v2.0/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EC%B9%98/</loc>
+      <loc>http://localhost:1314/docs/v1.0/</loc>
+      <lastmod>2023-08-21T00:00:00+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    
+    <url>
+      <loc>http://localhost:1314/docs/v1.1/</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://localhost:1314/docs/v2.0/agentinstall/</loc>
         <lastmod>2023-08-21T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://localhost:1314/docs/v2.0/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%A0%9C%EA%B1%B0/</loc>
+        <loc>http://localhost:1314/docs/v2.0/agentuninstall/</loc>
         <lastmod>2023-08-21T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
         <loc>http://localhost:1314/docs/v2.0/tutorial/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.0/agent/</loc>
+        <lastmod>2023-08-21T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.0/tutorial/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.0/manual/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/quicktutorial/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/quicktutorial1/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/quicktutorial2/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/quicktutorial3/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/quicktutorial4/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/quicktutorial5/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/quicktutorial6/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/uninstallagentlinux/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/installagentlinux/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual1/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual10/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual2/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual3/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual4/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual5/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual6/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual7/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual8/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/usermanual9/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/installagentwindows/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1314/docs/v1.1/uninstallagentwindows/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>

@@ -1,5 +1,5 @@
-title = "My Docs"
-baseurl = "http://localhost/"
+title = "OPMATE"
+baseurl = "http://https://cosy363.github.io/hugo-test/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -7,7 +7,7 @@ disableHugoGeneratorInject = true
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
-languageCode = "en-US"
+languageCode = "ko-KR"
 paginate = 10
 rssLimit = 10
 summarylength = 20 # 70 (default)
@@ -17,7 +17,7 @@ defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
 defaultContentLanguageInSubdir = false
 
-copyRight = "Copyright (c) 2020-2024 Thulite"
+copyRight = "Copyright (c) 2024 SK C&C"
 
 [build.buildStats]
   enable = true
@@ -56,9 +56,9 @@ copyRight = "Copyright (c) 2020-2024 Thulite"
   category = "categories"
   tag = "tags"
 
-[permalinks]
-  blog = "/blog/:slug/"
-  docs = "/docs/:sections[1:]/:slug/"
+#[permalinks]
+#  blog = "/blog/:slug/"
+#  docs = "/docs/:sections[1:]/:slug/"
 # docs = "/docs/1.0/:sections[1:]/:slug/"
 
 [minify.tdewolff.html]

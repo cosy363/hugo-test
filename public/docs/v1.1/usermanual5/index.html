@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1314/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1314/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1314/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.6517bd475b961e735c56927e04dd45bc8f1a218cadb2b2a660c739064c693d64b39d7da8a8054b70a6800ee2f95c7e5335b384fd29d41043565cc989eff0e802.css" integrity="sha512-ZRe9R1uWHnNcVpJ&#43;BN1FvI8aIYytsrKmYMc5BkxpPWSznX2oqAVLcKaADuL5XH5TNbOE/SnUEENWXMmJ7/DoAg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1314/docs/v1.1/usermanual5/">
+  <link rel="canonical" href="http://localhost:1314/docs/v1.1/usermanual5/">
+<title>사용자 매뉴얼  |  OPMATE</title>
+<meta name="description" content="5. 노드 그룹">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:title" content="사용자 매뉴얼">
+<meta property="og:description" content="5. 노드 그룹">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1314/docs/v1.1/usermanual5/"><meta property="og:image" content="http://localhost:1314/cover.png"><meta property="article:section" content="docs">
+
+<meta property="og:site_name" content="My Docs">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1314/cover.png"><meta name="twitter:title" content="사용자 매뉴얼">
+<meta name="twitter:description" content="5. 노드 그룹">
+<meta name="twitter:site" content="@getdoks">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1314/",
+       "name": "Opmate",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1314/docs/",
+       "name": "Opmate V2.0",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1314/docs/v1.1/",
+       "name": "Opmate V1.1",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "사용자 매뉴얼",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OPMATE</a>
+
+    
+    
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>OPMATE v2.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v2.0/agentinstall/">에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/agentuninstall/">에이전트 제거</a>
+  </li>
+
+  <li>
+    <details open>
+      <summary>사용자 튜토리얼</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial1/">1. CLI 명령어</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial2/">2. 사용자 로그인</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial3/">3. 노드 조회</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial4/">4. 태스크 생성</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial5/">5. 태스크 실행 및 권한 확인</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial6/">6. 파일 전송</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>OPMATE v1.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>OPMATE v1.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.0/agent/uninstallagentlinux/">리눅스/유닉스용 에이전트 삭제</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/installagentlinux/">리눅스/유닉스용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/installagentwindows/">윈도우용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/uninstallagentwindows/">윈도우즈용 에이전트 삭제</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Tutorial</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial1/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial2/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial3/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial4/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial5/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial6/">Tutorial</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/manual/">사용자 매뉴얼</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>OPMATE V1.1</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial1/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial2/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial3/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial4/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial5/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial6/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/uninstallagentlinux/">리눅스/유닉스용 에이전트 삭제</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/installagentlinux/">리눅스/유닉스용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual1/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual10/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual2/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual3/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual4/">사용자 매뉴얼</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/v1.1/usermanual5/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual6/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual7/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual8/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual9/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/installagentwindows/">윈도우용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/uninstallagentwindows/">윈도우즈용 에이전트 삭제</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OPMATE</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1314/docs/v1.0">OPMATE V1.0</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1314/docs/v1.1">OPMATE V1.1</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1314/docs/v2.0">OPMATE V2.0</a>
+              </li>
+            </ul>
+
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link p-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        
+        </div>
+    </div>
+
+    
+    </div>
+</header>
+</div>
+
+<div class="modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 visually-hidden" id="searchModalLabel">Search</h1>
+        <button type="button" class="btn-close visually-hidden" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="search-input flex-grow-1 d-none">
+          <form id="search-form" class="search-form" action="#" method="post" accept-charset="UTF-8" role="search">
+            <label for="query" class="visually-hidden">Search</label>
+            <div class="d-flex">
+              <input type="search" id="query" name="query" class="search-text form-control form-control-lg" placeholder="Search" aria-label="Search" maxlength="128" autocomplete="off">
+              <button type="button" class="btn btn-link text-decoration-none px-0 ms-3 d-md-none" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p class="search-loading status message d-none mt-3 text-center">Loading search index…</p>
+        <p class="search-no-recent message d-none mt-3 text-center">No recent searches</p>
+        <p class="search-no-results message d-none mt-3 text-center">No results for "<strong><span class="query-no-results">Query here</span></strong>"</p>
+        <div id="searchResults" class="search-results"></div>
+        <template>
+          <article class="search-result list-view">
+            <div class="card my-3">
+              <div class="card-body">
+                <header>
+                  <h2 class="h5 title title-submitted mb-0"><a class="stretched-link text-decoration-none text-reset" href="#">Title here</a></h2>
+                  <div class="submitted d-none"><time class="created-date">Date here</time></div>
+                </header>
+                <div class="content">Summary here</div>
+              </div>
+            </div>
+          </article>
+        </template>
+      </div>
+      <div class="modal-footer">
+        <ul class="list-inline me-auto d-none d-md-block">
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd><span class="DocSearch-Label">to select</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd><span class="DocSearch-Label">to navigate</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd><span class="DocSearch-Label">to close</span></li>
+        </ul>
+        <p class="d-md-none">Search by <a class="text-decoration-none" href="https://github.com/nextapps-de/flexsearch">FlexSearch</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>OPMATE v2.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v2.0/agentinstall/">에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/agentuninstall/">에이전트 제거</a>
+  </li>
+
+  <li>
+    <details open>
+      <summary>사용자 튜토리얼</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial1/">1. CLI 명령어</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial2/">2. 사용자 로그인</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial3/">3. 노드 조회</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial4/">4. 태스크 생성</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial5/">5. 태스크 실행 및 권한 확인</a>
+  </li>
+
+  <li>
+      <a href="/docs/v2.0/tutorial/tutorial6/">6. 파일 전송</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>OPMATE v1.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>OPMATE v1.0</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.0/agent/uninstallagentlinux/">리눅스/유닉스용 에이전트 삭제</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/installagentlinux/">리눅스/유닉스용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/installagentwindows/">윈도우용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/agent/uninstallagentwindows/">윈도우즈용 에이전트 삭제</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Tutorial</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial1/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial2/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial3/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial4/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial5/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/tutorial/quicktutorial6/">Tutorial</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/v1.0/manual/">사용자 매뉴얼</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>OPMATE V1.1</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial1/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial2/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial3/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial4/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial5/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/quicktutorial6/">Tutorial</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/uninstallagentlinux/">리눅스/유닉스용 에이전트 삭제</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/installagentlinux/">리눅스/유닉스용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual1/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual10/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual2/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual3/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual4/">사용자 매뉴얼</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/v1.1/usermanual5/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual6/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual7/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual8/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/usermanual9/">사용자 매뉴얼</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/installagentwindows/">윈도우용 에이전트 설치</a>
+  </li>
+
+  <li>
+      <a href="/docs/v1.1/uninstallagentwindows/">윈도우즈용 에이전트 삭제</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#노드-그룹-node-group">노드 그룹 (Node Group)</a>
+      <ul>
+        <li><a href="#속성-정의">속성 정의</a></li>
+        <li><a href="#노드-그룹-복사">노드 그룹 복사</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+			<h1>사용자 매뉴얼</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#노드-그룹-node-group">노드 그룹 (Node Group)</a>
+      <ul>
+        <li><a href="#속성-정의">속성 정의</a></li>
+        <li><a href="#노드-그룹-복사">노드 그룹 복사</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<p><a href="UserManual.md">목차</a> / <a href="UserManual4.md">이전페이지</a> / <a href="UserManual6.md">다음페이지</a></p>
+<h2 id="노드-그룹-node-group">노드 그룹 (Node Group)<a href="#노드-그룹-node-group" class="anchor" aria-hidden="true">#</a> </h2>
+<p>노드 그룹은 여러개의 노드가 모여있는 집합이며, 하나의 노드는 여러개의 노드 그룹에 소속될 수 있다.
+노드 그룹을 생성/수정/삭제하기 위해서는 관리자(레벨1)권한 이상이 필요하다.</p>
+<p>하나의 노드 그룹은 다음과 같은 정보로 구성된다.</p>
+<blockquote>
+<p>노드그룹ID, 소유자(Owner), 속성(Attribute), 포함 노드, 설명</p>
+</blockquote>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>$ opmate nodegroup view -id linux_tomcat
+
++--------------+--------------------------+
+| FIELD        | VALUE                    |
++--------------+--------------------------+
+| [BASIS]      |                          |
+|              |                          |
+| ID           | linux_tomcat             | ☜  노드그룹ID
+| OWNER        | bumbee                   | ☜  소유자(Owner)
+| DESCRIPTION  | Installed Tomcat         |
+| CREATED AT   | 2020/02/24 11:08         |
+| CREATED BY   | bumbee                   |
+| UPDATED AT   | 2020/02/24 11:08         |
+| UPDATED BY   | bumbee                   |
+|              |                          |
+| [NODES]      |                          | ☜  포함 노드
+|              | linux01                  |
+|              | linux02                  |
+|              | linux07                  |
+| [ATTRIBUTES] |                          | ☜  속성(Attribute)
+|              | TOMCAT_HOME=/home/tomcat |
++--------------+--------------------------+</code></pre>
+  </figure>
+</div>
+<p>태스크를 정의할 때 다수 노드를 쉽게 추가하기 위해 사용할 수 있으며, 공통 속성을 정의하기 위해 사용할 수 있다.</p>
+<p>OS의 종류/버전 또는 태스크 수행의 목적이나 호스트(Host)의 용도 등에 따라서 적절한 그룹을 생성하고 유지관리하는 것은
+태스크를 정의할 때마다 반복적인 개별 노드 추가작업을 하지 않아도 되기에 사용자의 수고로움을 줄일 수 있다.</p>
+<h3 id="속성-정의">속성 정의<a href="#속성-정의" class="anchor" aria-hidden="true">#</a> </h3>
+<p>그룹에 소속된 모든 노드에 공통적으로 적용할 속성(Attribute)을 정의할 수 있다.</p>
+<p>속성은 다음과 같이 Key, Value의 쌍으로 정의되며 태스크의 스크립트에서는 해당 Key를 사용하여 작성할 수 있다.</p>
+<blockquote>
+<p>&ldquo;ATTRIBUTE_KEY1&rdquo;=&ldquo;ATTRIBUTE_VALUE1&rdquo;</p>
+</blockquote>
+<p>예를 들어, 특정 그룹에 TOMCAT_HOME=/home/tomcat 와 같은 속성을 정의하면 소속된 모든 노드의 속성으로 동일하게 적용되며, 스크립트에 해당 속성의 치환 변수(@OPM_ATTR.속성명@)가 사용되었을 경우 정의된 값으로 치환된다.</p>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>#!/bin/sh
+
+@OPM_ATTR.TOMCAT_HOME@/bin/startup.sh</code></pre>
+  </figure>
+</div>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code>#!/bin/sh
+
+/home/tomcat/bin/startup.sh</code></pre>
+  </figure>
+</div>
+<h3 id="노드-그룹-복사">노드 그룹 복사<a href="#노드-그룹-복사" class="anchor" aria-hidden="true">#</a> </h3>
+<p>노드 그룹의 갯수에 제한이 있는 것은 아니지만, 새로운 노드 그룹을 정의하기에 앞서 정의하려는 노드 그룹과 동일하거나 유사한 노드 그룹이 기 정의되어 있는지 확인하는 것이 필요하다.</p>
+<p>이것은 동일한 노드들을 집합으로 가지는 다수의 노드 그룹이 시스템에 생성되는 것을 막아주며, 제공되는 노드 그룹 복사 기능은 유사한 노드 그룹을 생성하기에 편리하다.</p>
+<p><em>(사용자는 기존 태스크의 영향도를 줄이는 등의 특정한 목적을 가지고 의도적으로 동일한 노드들의 집합을 만들 수 있다. 이때에도 노드 그룹 복사기능은 유용하다.)</em></p>
+<!-- Floating Menu -->
+<link rel="stylesheet" type="text/css" href="/assets/css/common.css" />
+<div class="usermanual-menu">
+	<ul>
+		<!--li><a href="#">이전</a></li-->
+		<li><a href="#">목차</a>
+			<ul>
+				<li><a href="UserManual1.html">1. 개요</a></li>
+				<li><a href="UserManual2.html">2. 사용자</a></li>
+				<li><a href="UserManual3.html">3. 사용자 그룹</a></li>
+				<li><a href="UserManual4.html">4. 노드</a></li>
+				<li><a href="UserManual5.html">5. 노드 그룹</a></li>
+				<li><a href="UserManual6.html">6. 태스크</a></li>
+				<li><a href="UserManual7.html">7. 태스크 인스턴스</a></li>
+				<li><a href="UserManual8.html">8. 파일 배포/수집</a></li>
+				<li><a href="UserManual9.html">[별첨 #1] CLI 사용법</a></li>
+				<li><a href="UserManual10.html">[별첨 #2] 스크립트내 예약어</a></li>
+			</ul>
+		</li>
+		<!--li><a href="#">다음</a></li-->
+	</ul>
+</div>
+<p><a href="UserManual.md">목차</a> / <a href="UserManual4.md">이전페이지</a> / <a href="UserManual6.md">다음페이지</a></p>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/v1.1/usermanual4/" class="stretched-link text-reset text-decoration-none">사용자 매뉴얼</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/v1.1/usermanual6/" class="stretched-link text-reset text-decoration-none">사용자 매뉴얼</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Brought to you by <a class="text-muted" href="https://thulite.io/">Thulite</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script async
+  src="/js/app.0aa8de4bc851f5b9f814266ea289346c992dda147e2d658c1d8009ea966a9ac7.js"
+  integrity="sha256-CqjeS8hR9bn4FCZuook0bJkt2hR&#43;LWWMHYAJ6pZqmsc=">
+</script>
+
+
+
+
+
+<script async
+  src="/js/flexsearch.be33aab3067e96554f261851c25a593228b91154cd28ff5c7f8d52b2e7f306d2.js"
+  integrity="sha256-vjOqswZ&#43;llVPJhhRwlpZMii5EVTNKP9cf41SsufzBtI=">
+</script>
+<script async
+  src="/js/search-modal.97d606e77f08deeb37876860d99c8f6813ef29263e73b6435c252de6be98d55e.js"
+  integrity="sha256-l9YG538I3us3h2hg2ZyPaBPvKSY&#43;c7ZDXCUt5r6Y1V4=">
+</script>
+
+    
+  </body>
+</html>
