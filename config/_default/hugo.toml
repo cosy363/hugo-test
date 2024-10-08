@@ -1,5 +1,5 @@
 title = "OPMATE"
-baseurl = "http://https://cosy363.github.io/hugo-test/"
+baseurl = "http://cosy363.github.io/hugo-test"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
